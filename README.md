@@ -33,6 +33,8 @@ Then run one of the demos:
 
 1 - Scrap the "Complete Location Listings" table using the html_table() method.
 
+    locations_page <- read_html("http://www.secondharvestmetrolina.org/agencies/Get-Food-Assistance")
+    
     locations_page %>% 
     html_nodes("table") %>% 
     .[[1]] %>%
